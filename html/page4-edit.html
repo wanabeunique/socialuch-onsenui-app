@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsen-css-components.min.css">
+  <script src="./../node_modules/onsenui/js/onsenui.min.js"></script>
+  <script src="./../js/page.js"></script>
+
+  <script>
+    ons.disableAutoStyling()
+  </script>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="toolbar__container">
+      <div class="left">
+        <ons-back-button></ons-back-button>
+      </div>
+      <div class="center">
+        <img src="./../img/logo.jpg" alt="">
+      </div>
+      <div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+    
+    <div id="edit">
+      <div class="page-title container-wrap">
+        <h1>Редактировать данные</h1>
+      </div>
+      <div class="edit-wrapper container-wrap">
+        <div class="edit__item">
+          <p class="edit__title">ФИО</p>
+          <input type="text" class="edit__input" value="Николаев Иван Александрович">
+        </div>
+        <div class="edit__item">
+          <p class="edit__title">Дата рождения</p>
+          <input type="text" class="edit__input" value="31.01.1983">
+        </div>
+        <div class="edit__item">
+          <p class="edit__title">Адрес проживания</p>
+          <input type="text" class="edit__input" value="Ул. Заречный бульвар, 30, кв 72">
+        </div>
+        <div class="edit__item">
+          <p class="edit__title">Телефон</p>
+          <input type="text" class="edit__input" value="+7 (910) 643-32-54">
+        </div>
+        <div class="edit__item">
+          <p class="edit__title">Электронная почта</p>
+          <input type="text" class="edit__input" value="848437@mail.ru">
+        </div>
+      </div>
+      <div class="page-title container-wrap">
+        <h1>Пароль</h1>
+      </div>
+      <div class="edit-password container-wrap">
+        <input class="edit__input" type="password" id="password-input" placeholder="Введите пароль" name="password" value="123456">
+        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+      </div>
+      <div class="profile__btns container-wrap">
+        <ons-button class="profile__btn profile__btn--white">
+          <img class="profile__btn--img" src="./../img/lock.svg" alt="">
+          <p class="profile__btn--title">Изменить пароль</p>
+        </ons-button>
+        <ons-button class="profile__btn profile__btn--blue" onclick="pushProfile()">
+          <p class="profile__btn--title">Сохранить</p>
+        </ons-button>
+      </div>
+    </div>
+    
+    <ons-bottom-toolbar>
+      <ons-tabbar swipeable position="auto">
+        <ons-tab label="Мой район" icon="ion-ios-home, my" active>
+        </ons-tab>
+        <ons-tab label="Соц участковый" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+        <ons-tab label="Уведомления" icon="md-settings" active-icon="md-face"  badge="">
+        </ons-tab>
+        <ons-tab label="Аккаунт" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+      </ons-tabbar>
+    </ons-bottom-toolbar>
+
+    </ons-page>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsen-css-components.min.css">
+  <script src="./../node_modules/onsenui/js/onsenui.min.js"></script>
+  <script src="./../js/page.js"></script>
+
+  <script>
+    ons.disableAutoStyling()
+  </script>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="toolbar__container">
+      <div class="left">
+        <ons-back-button></ons-back-button>
+      </div>
+      <div class="center">
+        <img src="./../img/logo.jpg" alt="">
+      </div>
+      <div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+    <div id="events">
+        <div class="page-title container-wrap">
+          <h1>События</h1>
+        </div>
+        <ul class="ads__list board">
+          <ul class="board__items">
+            <li class="board__item">
+              <div class="board__item--date">
+                <img src="./../img/calendar.svg" alt="">
+                <span>22.12.2022</span>
+              </div>
+              <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+              <ons-button onclick="pushAd()" class="board__btn">
+                <span>Подробнее ></span>
+              </ons-button>
+            </li>
+            <li class="board__item">
+              <div class="board__item--date">
+                <img src="./../img/calendar.svg" alt="">
+                <span>22.12.2022</span>
+              </div>
+              <p class="board__item--text">Новое отделение МФЦ открылось на пло-
+                щади Советской в Нижнем Новгороде
+                Новое отделение на 15 окон начало прием</p>
+              <ons-button onclick="pushAd()" class="board__btn">
+                <span>Подробнее ></span>
+              </ons-button>
+            </li>
+            <li class="board__item">
+              <div class="board__item--date">
+                <img src="./../img/calendar.svg" alt="">
+                <span>22.12.2022</span>
+              </div>
+              <p class="board__item--text">«Корзина доброты» собрала в 2022 году более 518 тонн продуктов для нуждающихся людей</p>
+              <ons-button onclick="pushAd()" class="board__btn">
+                <span>Подробнее ></span>
+              </ons-button>
+            </li>
+            <li class="board__item">
+              <div class="board__item--date">
+                <img src="./../img/calendar.svg" alt="">
+                <span>22.12.2022</span>
+              </div>
+              <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+              <ons-button onclick="pushAd()" class="board__btn">
+                <span>Подробнее ></span>
+              </ons-button>
+            </li>
+            <li class="board__item">
+              <div class="board__item--date">
+                <img src="./../img/calendar.svg" alt="">
+                <span>22.12.2022</span>
+              </div>
+              <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+              <a href="#" class="board__btn">
+                <span>Подробнее ></span>
+              </a>
+            </li>
+            <li class="board__item">
+              <div class="board__item--date">
+                <img src="./../img/calendar.svg" alt="">
+                <span>22.12.2022</span>
+              </div>
+              <p class="board__item--text">Содержание и развитие зелёных насаждений, защитных лесополос...</p>
+              <ons-button onclick="pushAd()" class="board__btn">
+                <span>Подробнее ></span>
+              </ons-button>
+            </li>
+          </ul>
+        </ul>
+      </div>    
+
+      <ons-bottom-toolbar>
+        <ons-tabbar swipeable position="auto">
+          <ons-tab label="Мой район" icon="ion-ios-home, my" active>
+          </ons-tab>
+          <ons-tab label="Соц участковый" icon="md-settings" active-icon="md-face">
+          </ons-tab>
+          <ons-tab label="Уведомления" icon="md-settings" active-icon="md-face"  badge="">
+          </ons-tab>
+          <ons-tab label="Аккаунт" icon="md-settings" active-icon="md-face">
+          </ons-tab>
+        </ons-tabbar>
+      </ons-bottom-toolbar>
+
+    </ons-page>
+  </body>
+</html>

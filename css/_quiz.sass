@@ -1,0 +1,253 @@
+.quiz__btn
+  display: flex
+  align-items: center
+  justify-content: center
+  background: var(--blue-color)
+  border-radius: 40px
+  height: 50px
+  width: 284px
+  span
+    color: var(--turquoise-color)
+    font-weight: 500
+    line-height: 23px
+    margin-left: 8px
+
+.quiz__wrapper
+  display: flex
+  justify-content: space-between
+
+.quiz--secondary
+  max-width: 500px
+  .quiz__secondary--item
+    &:last-child
+      margin-top: var(--tiny-offset)
+
+.quiz__question--second
+  font-weight: 300
+  color: #474747
+
+.quiz--main
+  width: 100%
+  background: #F1FAFF
+  border-radius: 20px
+  padding: var(--small-offset)
+  position: relative
+
+.quiz__info
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid #EDEDED
+  padding-bottom: var(--mobile-offset)
+
+.quiz__type
+  display: flex
+  width: 100%
+  gap: 10px
+  align-items: center
+  justify-content: space-between
+
+.quiz__data
+  display: flex
+  flex-direction: column
+
+.quiz__data--date
+  display: flex
+  align-items: center
+  color: #474747
+  img
+    margin-right: 10px
+    width: 21px
+    height: 21px
+
+.quiz__question--second
+  margin-top: 15px
+
+.quiz__secondary--btn
+  background: white
+  margin-top: 15px
+
+.quiz__data--profile
+  display: flex
+  margin-top: var(--mobile-offset)
+  color: #474747
+  img
+    margin-right: 10px
+    width: 21px
+    height: 21px
+
+.quiz__name
+  font-weight: 500
+  font-size: 18px
+  color: #474747
+  display: flex
+  justify-content: center
+  align-items: center
+
+.page__content
+  h4
+    margin: 0
+
+.quiz__hashtag
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #CCF4DE
+  border-radius: 40px
+  span
+    padding: 5px var(--small-offset)
+    color: #01A856
+    font-weight: 500
+
+.quiz__img
+  position: absolute
+  bottom: 0
+  right: 0
+  width: 30%
+  height: 70%
+
+.quiz__question
+  font-weight: 500
+  font-size: 20px
+  color: #474747
+  max-width: 825px
+  margin-top: var(--tiny-offset)
+  z-index: 5
+  position: relative
+
+.quiz__answer
+  margin-top: var(--tiny-offset)
+
+.quiz__secondary--btn
+  width: 150px
+  height: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid var(--blue-color)
+  border-radius: 20px
+  p
+    font-weight: 500
+    font-size: 12px
+    color: var(--blue-color)
+
+.quiz--btn
+  margin-top: var(--mobile-offset)
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 40px
+  max-width: 100%
+  height: 50px
+  border-radius: 40px
+  background: var(--blue-color)
+  p
+    font-weight: 500
+    font-size: 16px
+    line-height: 23px
+    text-align: center
+    color: #FFFFFF
+
+.quiz__info--secondary
+  background: #F1FAFF
+  padding: 15px var(--small-offset)
+  border-radius: 20px 20px 0 0
+
+.quiz__text--secondary
+  padding: 15px var(--small-offset)
+  border-radius: 0 0 20px 20px
+
+.quiz__secondary--item
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04)
+  border-radius: 20px
+
+#quiz
+  .quiz__type
+    display: flex
+    gap: 10px
+    border-radius: 40px
+    justify-content: flex-start
+    margin-top: var(--mobile-offset)
+
+// кастомный чекбокс
+
+.control
+  display: block
+  position: relative
+  padding-left: 30px
+  margin-bottom: var(--tiny-offset)
+  cursor: pointer
+  font-size: 18px
+
+  // Hide default browser input
+  input
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+// Custom control
+.control__indicator
+  position: absolute
+  top: 0
+  left: 0
+  height: 20px
+  width: 20px
+  background: #F1FAFF
+  border: 1px solid var(--blue-color)
+
+  .control--radio &
+    border-radius: 50% // Makes radio buttons circlular
+
+  // Hover and focus
+  .control:hover input ~ &,
+  .control input:focus ~ &
+    background: var(--blue-color)
+
+  // Hover when checked
+  .control:hover input:not([disabled]):checked ~ &,
+  .control input:checked:focus ~ &
+    background: #CAECFF
+
+  // Hide default browser input
+  .control input:disabled ~ &
+    background: gray
+    opacity: 0.6
+    pointer-events: none
+
+  &:after
+    content: ''
+    position: absolute
+    display: none // Hide check
+
+    .control input:checked ~ &
+      display: block // Show check
+
+    // Checkbox tick
+    .control--checkbox &
+      left: 8px
+      top: 4px
+      width: 3px
+      height: 8px
+      border: solid white
+      border-width: 0 2px 2px 0
+      transform: rotate(45deg)
+
+    // Disabled tick colour
+    .control--checkbox input:disabled ~ &
+      border-color: green
+
+    // Radio button inner circle
+    .control--radio &
+      left: 4px
+      top: 4px
+      height: 10px
+      width: 10px
+      border-radius: 50%
+      background: var(--blue-color)
+
+    // Disabled circle colour
+    .control--radio input:disabled ~ &
+      background: var(--blue-color)
+
+    .control input:checked
+      p
+        color: green

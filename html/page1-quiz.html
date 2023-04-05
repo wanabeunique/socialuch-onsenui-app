@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsen-css-components.min.css">
+  <script src="./../node_modules/onsenui/js/onsenui.min.js"></script>
+  <script src="./../js/page.js"></script>
+
+  <script>
+    ons.disableAutoStyling()
+  </script>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="toolbar__container">
+      <div class="left">
+        <ons-back-button></ons-back-button>
+      </div>
+      <div class="center">
+        <img src="./../img/logo.jpg" alt="">
+      </div>
+      <div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+
+    <div id="quiz">
+      <div class="page-title container-wrap">
+        <h1>Опрос</h1>
+      </div>
+      <div class="container-wrap">
+        <div class="quiz--main">
+          <div class="quiz__info">
+            <div class="quiz__data">
+              <div class="quiz__data--date">
+                <img src="./../img/calendarGreen.svg" alt="">
+                <p>Дата создания: 23.01.2022</p>
+              </div>
+              <div class="quiz__data--profile">
+                <img src="./../img/profile.svg">
+                <p>Максим Иванов</p>
+              </div>
+          </div>
+          </div>
+          <div class="quiz__text">
+            <div class="quiz__type">
+              <div class="quiz__hashtag"><span>#ЖКХ</span></div>
+              <div class="quiz__hashtag"><span>#УК</span></div>
+            </div>
+              <p class="quiz__question">
+                Что, с Вашей точки зрения, выступает главным показателем качества работы управляющей компании?
+              </p>
+              <div class="quiz__answer">
+                <div class="control-group">
+                  <label class="control control--radio radio--active">Качество результата предоставляемых услуг
+                    <input type="radio" name="radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                  <label class="control control--radio">Качество взаимодействия УК с жильцами
+                    <input type="radio" name="radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                  <label class="control control--radio">Зависит от типа услуг
+                    <input type="radio" name="radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                  <label class="control control--radio">Затрудняюсь ответить
+                    <input type="radio" name="radio"/>
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+              </div>
+          </div>
+          </div>
+          <a href="" class="quiz--btn container-wrap"><p>Ответить ></p></a>
+      </div>
+    </div>
+
+    <ons-bottom-toolbar>
+      <ons-tabbar swipeable position="auto">
+        <ons-tab label="Мой район" icon="ion-ios-home, my" active>
+        </ons-tab>
+        <ons-tab label="Соц участковый" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+        <ons-tab label="Уведомления" icon="md-settings" active-icon="md-face"  badge="">
+        </ons-tab>
+        <ons-tab label="Аккаунт" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+      </ons-tabbar>
+    </ons-bottom-toolbar>
+
+    </ons-page>
+  </body>
+</html>

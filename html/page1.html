@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsen-css-components.min.css">
+  <script src="./../node_modules/onsenui/js/onsenui.min.js"></script>
+  <script src="./../js/page.js"></script>
+
+
+  <script>
+    ons.disableAutoStyling()
+  </script>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="toolbar__container">
+      <div class="left">
+        <ons-back-button></ons-back-button>
+      </div>
+      <div class="center">
+        <img src="./../img/logo.jpg" alt="">
+      </div>
+      <div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+
+    <div class="main">
+        <div class="main__item main__title container-wrap page-title">
+          <h1>Ленинский район</h1>
+          <div class="main__btns">
+            <ons-button class="main__btn main__btn--blue">Показать списком</ons-button>
+            <ons-button class="main__btn main__btn--white" onclick="pushMap()">На карту</ons-button>
+          </div>
+        </div>
+        
+        <div class="main__item container-left">
+          <div class="title">
+            <strong class="title__left">Объявления</strong>
+            <!-- <ons-button page="ads.html" class="title__right" label="" id="adsPush"active>Показать все ></ons-button> -->
+            <ons-button class="title__right" onclick="pushAds()">Показать все ></ons-button>
+          </div>
+          <div class="main__item--carousel carousel-wrapper" >
+            <ons-button class="board__next" onclick="next(this)">
+              Еще >
+            </ons-button>
+            <ons-carousel item-width="66%" fullscreen swipeable auto-scroll overscrollable id="carousel" class="carousel">
+              <ons-carousel-item>
+                <li class="board__item">
+                  <div class="board__item--date">
+                    <img src="./../img/calendar.svg" alt="">
+                    <span>22.12.2022</span>
+                  </div>
+                  <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                </li>
+              </ons-carousel-item>
+              <ons-carousel-item>
+                <li class="board__item">
+                  <div class="board__item--date">
+                    <img src="./../img/calendar.svg" alt="">
+                    <span>22.12.2022</span>
+                  </div>
+                  <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                </li>
+              </ons-carousel-item>
+
+              <ons-carousel-item>
+                  <li class="board__item">
+                    <div class="board__item--date">
+                      <img src="./../img/calendar.svg" alt="">
+                      <span>22.12.2022</span>
+                    </div>
+                    <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                  </li>
+              </ons-carousel-item>
+
+              <ons-carousel-item>
+                <li class="board__item">
+                  <div class="board__item--date">
+                    <img src="./../img/calendar.svg" alt="">
+                    <span>22.12.2022</span>
+                  </div>
+                  <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                </li>
+            </ons-carousel-item>
+            
+            <ons-carousel-item>
+              <li class="board__item">
+                <div class="board__item--date">
+                  <img src="./../img/calendar.svg" alt="">
+                  <span>22.12.2022</span>
+                </div>
+                <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+              </li>
+          </ons-carousel-item>
+          </ons-carousel>
+        </div>
+        </div>
+        
+        <div class="main__item container-left">
+            <div class="title">
+              <strong class="title__left">Проблемы</strong>
+              <!-- <ons-button page="ads.html" class="title__right" label="" id="adsPush"active>Показать все ></ons-button> -->
+              <ons-button class="title__right" onclick="pushProblems()">Показать все ></ons-button>
+            </div>
+            <div class="main__item--carousel carousel-wrapper" >
+              <ons-button class="board__next" onclick="next(this)">
+                Еще >
+              </ons-button>
+              <ons-carousel item-width="66%" fullscreen swipeable auto-scroll overscrollable id="carousel" class="carousel">
+                <ons-carousel-item>
+                  <li class="board__item">
+                    <div class="board__item--date">
+                      <img src="./../img/calendar.svg" alt="">
+                      <span>22.12.2022</span>
+                    </div>
+                    <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                  </li>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                  <li class="board__item">
+                    <div class="board__item--date">
+                      <img src="./../img/calendar.svg" alt="">
+                      <span>22.12.2022</span>
+                    </div>
+                    <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                  </li>
+                </ons-carousel-item>
+  
+                <ons-carousel-item>
+                    <li class="board__item">
+                      <div class="board__item--date">
+                        <img src="./../img/calendar.svg" alt="">
+                        <span>22.12.2022</span>
+                      </div>
+                      <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                    </li>
+                </ons-carousel-item>
+  
+                <ons-carousel-item>
+                  <li class="board__item">
+                    <div class="board__item--date">
+                      <img src="./../img/calendar.svg" alt="">
+                      <span>22.12.2022</span>
+                    </div>
+                    <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                  </li>
+              </ons-carousel-item>
+              
+              <ons-carousel-item>
+                <li class="board__item">
+                  <div class="board__item--date">
+                    <img src="./../img/calendar.svg" alt="">
+                    <span>22.12.2022</span>
+                  </div>
+                  <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                </li>
+            </ons-carousel-item>
+            </ons-carousel>
+          </div>
+        </div>
+          
+        <div class="main__item container-left">
+            <div class="title">
+              <strong class="title__left">Новости</strong>
+              <ons-button class="title__right" onclick="pushNews()">Показать все ></ons-button>
+            </div>
+            <div class="main__item--carousel carousel-wrapper" >
+              <ons-button class="board__next" onclick="next(this)">
+                Еще >
+              </ons-button>
+              <ons-carousel item-width="66%" fullscreen swipeable auto-scroll overscrollable id="carousel" class="carousel">
+                <ons-carousel-item>
+                  <div class="carousel__item-wrapper">
+                    <img class="carousel__img" src="./../img/carousel/new1.jpg" alt="">
+                  <div class="carousel__text">
+                    <div class="carousel__date">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                        <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                      </svg>
+                      <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+                    </div>
+                    <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+                    снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+                  </div>
+                </div>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                  <div class="carousel__item-wrapper">
+                    <img class="carousel__img" src="./../img/carousel/new2.jpg" alt="">
+                  <div class="carousel__text">
+                    <div class="carousel__date">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                        <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                      </svg>
+                      <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+                    </div>
+                    <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+                    снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+                  </div>
+                  </div>
+                </ons-carousel-item>
+  
+                <ons-carousel-item>
+                  <div class="carousel__item-wrapper">
+                    <img class="carousel__img" src="./../img/carousel/new3.jpg" alt="">
+                  <div class="carousel__text">
+                    <div class="carousel__date">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                        <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                      </svg>
+                      <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+                    </div>
+                    <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+                    снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+                  </div>
+                  </div>
+                </ons-carousel-item>
+  
+                <ons-carousel-item>
+                  <div class="carousel__item-wrapper">
+                    <img class="carousel__img" src="./../img/carousel/new4.jpg" alt="">
+                  <div class="carousel__text">
+                    <div class="carousel__date">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                        <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                      </svg>
+                      <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+                    </div>
+                    <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+                    снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+                  </div>
+                  </div>
+                </ons-carousel-item>
+              
+                <ons-carousel-item>
+                <div class="swiper-slide carousel__item">
+                  <div class="carousel__item-wrapper">
+                    <img class="carousel__img" src="./../img/carousel/new8.jpg" alt="">
+                  <div class="carousel__text">
+                    <div class="carousel__date">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20Z" fill="#01A856"/>
+                        <path d="M12.5 7H11V13L16.25 16.15L17 14.92L12.5 12.25V7Z" fill="#01A856"/>
+                      </svg>
+                      <span>10&nbsp;ДЕКАБРЯ, 14:00</span>
+                    </div>
+                    <p class="carousel__inscription">Нижегородскую &laquo;Хрустальную
+                    снежинку&raquo; передали в&nbsp;Новосибирский &laquo;Музей на&nbsp;Набережной&raquo;</p>
+                  </div>
+                  </div>
+                </div>
+                </ons-carousel-item>
+              </ons-carousel>
+            </div>
+        </div>
+          
+        <div class="main__item container-wrap">
+              <div class="title">
+                <strong class="title__left">Опросы и
+                  голосования</strong>
+                <ons-button class="title__right" onclick="pushQuizzes()">Показать все ></ons-button>
+              </div>
+              <div class="main__item-quiz quiz">
+                <div class="quiz__secondary--item">
+                  <div class="quiz__info quiz__info--secondary">
+                    <div class="quiz__type">
+                      <h4 class="quiz__name">ОПРОС</h4>
+                      <div class="quiz__hashtag"><span>#Дороги</span></div>
+                    </div>
+                  </div>
+                  <div class="quiz__text--secondary">
+                    <div class="quiz__data--date">
+                      <img src="./../img/calendarGreen.svg" alt="">
+                      <p>Дата создания: 23.01.2022</p>
+                    </div>
+                    <p class="quiz__question--second">
+                      Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+                    </p>
+                    <ons-button onclick="pushQuiz()" class="quiz__secondary--btn">
+                      <p>Пройти &gt;</p>
+                    </ons-button>
+                  </div>
+                </div>
+              </div>
+        </div>
+              
+        <div class="main__item container-left">
+            <div class="title">
+              <strong class="title__left">События</strong>
+              <!-- <ons-button page="ads.html" class="title__right" label="" id="adsPush"active>Показать все ></ons-button> -->
+              <ons-button class="title__right" onclick="pushEvents()">Показать все ></ons-button>
+            </div>
+            <div class="main__item--carousel carousel-wrapper" >
+              <ons-button class="board__next" onclick="next(this)">
+                Еще >
+              </ons-button>
+              <ons-carousel item-width="66%" fullscreen swipeable auto-scroll overscrollable id="carousel" class="carousel">
+                <ons-carousel-item>
+                  <li class="board__item">
+                    <div class="board__item--date">
+                      <img src="./../img/calendar.svg" alt="">
+                      <span>22.12.2022</span>
+                    </div>
+                    <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                  </li>
+                </ons-carousel-item>
+                <ons-carousel-item>
+                  <li class="board__item">
+                    <div class="board__item--date">
+                      <img src="./../img/calendar.svg" alt="">
+                      <span>22.12.2022</span>
+                    </div>
+                    <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                  </li>
+                </ons-carousel-item>
+  
+                <ons-carousel-item>
+                    <li class="board__item">
+                      <div class="board__item--date">
+                        <img src="./../img/calendar.svg" alt="">
+                        <span>22.12.2022</span>
+                      </div>
+                      <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                    </li>
+                </ons-carousel-item>
+  
+                <ons-carousel-item>
+                  <li class="board__item">
+                    <div class="board__item--date">
+                      <img src="./../img/calendar.svg" alt="">
+                      <span>22.12.2022</span>
+                    </div>
+                    <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                  </li>
+              </ons-carousel-item>
+              
+              <ons-carousel-item>
+                <li class="board__item">
+                  <div class="board__item--date">
+                    <img src="./../img/calendar.svg" alt="">
+                    <span>22.12.2022</span>
+                  </div>
+                  <p class="board__item--text">«Потеплело – теперь плывем!»: В Нижнем Новгороде случился потоп из-за резко начавшейся оттепели</p>
+                </li>
+            </ons-carousel-item>
+            </ons-carousel>
+          </div>
+        </div>
+    </div>
+    
+
+    <ons-bottom-toolbar>
+      <ons-tabbar swipeable position="auto">
+        <ons-tab label="Мой район" icon="ion-ios-home, my" active>
+        </ons-tab>
+        <ons-tab label="Соц участковый" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+        <ons-tab label="Уведомления" icon="md-settings" active-icon="md-face"  badge="">
+        </ons-tab>
+        <ons-tab label="Аккаунт" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+      </ons-tabbar>
+    </ons-bottom-toolbar>
+
+  </ons-page>
+  </body>
+</html>

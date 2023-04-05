@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsen-css-components.min.css">
+  <script src="./../node_modules/onsenui/js/onsenui.min.js"></script>
+  <script src="./../js/page.js"></script>
+
+  <script>
+    ons.disableAutoStyling()
+  </script>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="toolbar__container">
+      <div class="left">
+        <ons-back-button></ons-back-button>
+      </div>
+      <div class="center">
+        <img src="./../img/logo.jpg" alt="">
+      </div>
+      <div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+    
+    <div class="page2">
+      page2
+    </div>
+
+    <ons-bottom-toolbar>
+      <ons-tabbar swipeable position="auto">
+        <ons-tab label="Мой район" icon="ion-ios-home, my" active>
+        </ons-tab>
+        <ons-tab label="Соц участковый" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+        <ons-tab label="Уведомления" icon="md-settings" active-icon="md-face"  badge="">
+        </ons-tab>
+        <ons-tab label="Аккаунт" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+      </ons-tabbar>
+    </ons-bottom-toolbar>
+
+    </ons-page>
+  </body>
+</html>

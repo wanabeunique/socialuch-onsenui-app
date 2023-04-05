@@ -1,0 +1,147 @@
+@import _ads.sass
+@import _map.sass
+@import _carousel.sass
+@import _news.sass
+@import _cfg.sass
+@import _quiz.sass
+@import _ad.sass
+@import _problem.sass
+@import _new.sass
+@import _profile.sass
+@import _edit.sass
+
+body
+  height: 100%
+
+// ons-tabbar
+//   height: 100%
+
+// .tabbar
+//   position: fixed
+
+// .main
+//   margin-bottom: 100px
+
+  
+.ons-tabbar__footer
+  height: 72px
+  background: white
+  border: none
+  border-radius: 20px 20px 0 0
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.04)
+
+.container-wrap
+  padding: 0px var(--mobile-offset)
+
+.container-left
+  padding: 0
+  padding-left: var(--mobile-offset)
+
+.main
+  .main__item
+      margin-bottom: var(--small-offset)
+.title
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: var(--mobile-offset)
+.title__left
+  font-weight: 500
+  font-size: 30px
+  line-height: 120%
+  color: var(--title-black-color)
+  max-width: 50%
+.title__right
+  font-weight: 500
+  font-size: 14px
+  line-height: 140%
+  color: #8A8A8A
+  background: none
+
+.back-button
+  padding-left: var(--mobile-offset)
+  height: 56px
+.right
+  .toolbar-button
+    padding-right: var(--mobile-offset)
+
+.center
+  img
+    margin-top: 5px
+
+.page-title
+  margin-top: var(--mobile-offset)
+  h1
+    margin: 0
+    margin-bottom: var(--mobile-offset)
+    font-weight: 500
+    font-size: 30px
+    line-height: 120%
+    color: var(--title-black-color)
+
+.main__btns
+  display: grid
+  grid-template-columns: 1fr 1fr
+  gap: 20px
+
+.main__btn
+  text-align: center
+  border-radius: 20px
+  padding: 8px 0
+  font-weight: 500
+  font-size: 12px
+  line-height: 140%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.main__btn--white
+  background: white
+  border: 1px solid var(--blue-color)
+  color: var(--blue-color)
+  &::before
+    content: ''
+    background-image: url('./../img/blueBtn.svg')
+    display: block
+    width: 18px
+    height: 18px
+    margin-right: 10px
+
+.main__btn--blue
+  background: var(--blue-color)
+  color: white
+  &::before
+    content: ''
+    background-image: url('./../img/whiteBtn.svg')
+    display: block
+    width: 16px
+    height: 13px
+    margin-right: 10px
+
+.news__wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100%
+  gap: var(--mobile-offset)
+  .carousel__item-wrapper
+    width: 100%
+    height: 100%
+    max-height: 100%
+    max-width: 358px
+
+.carousel ons-carousel-item
+  &:not(:last-child)
+    .board__item
+      margin-right: var(--mobile-offset)
+
+.carousel ons-carousel-item
+  &:not(:last-child)
+    .carousel__item-wrapper
+      margin-right: var(--mobile-offset)
+
+.quizzes__list
+  display: flex
+  flex-direction: column
+  gap: var(--mobile-offset)

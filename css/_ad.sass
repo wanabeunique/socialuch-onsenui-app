@@ -1,0 +1,161 @@
+.ad__info
+  padding-bottom: 25px
+  margin-bottom: 25px
+  border-bottom: 1px solid #EDEDED
+
+.ad__place
+  display: flex
+  margin-bottom: var(--tiny-offset)
+
+.ad__place-img
+  margin-right: var(--mobile-offset)
+
+.ad__place-title
+  display: flex
+  margin-bottom: 10px
+  font-weight: 500
+  font-size: 16px
+  line-height: 140%
+  color: #474747
+
+.ad__place-subtitle
+  font-weight: 300
+  font-size: 16px
+  line-height: 140%
+  color: var(--title-black-color)
+
+.ad__place-img
+  width: 17.5px
+  height: 25px
+
+.ad__date
+  display: flex
+
+.ad__date-img
+  margin-right: var(--mobile-offset)
+
+.ad__date-text
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #01A856
+  font-weight: 300
+  font-size: 16px
+  line-height: 140%
+
+.ad__title
+  display: flex
+  font-weight: 500
+  font-size: 18px
+  line-height: 120%
+  color: var(--title-black-color)
+  margin-bottom: var(--mobile-offset)
+
+.ad__content
+  color: var(--title-black-color)
+
+.blur-container
+  overflow: hidden
+  text-overflow: ellipsis
+  color: transparent
+  -webkit-background-clip: text
+  background-clip: text
+  background-image: linear-gradient(to bottom, #000, #000, rgba(0, 0, 0, 0))
+  height: 220px
+  margin-bottom: 10px
+  font-weight: 300
+  font-size: 16px
+  line-height: 150%
+  width: 100%
+
+.ad__text
+  height: 100%
+
+.ad__imgs
+  display: flex
+  justify-content: center
+  gap: 10px
+  flex-wrap: wrap
+  margin-bottom: var(--small-offset)
+
+.ad__text-content
+  position: relative
+.blur-reset
+  position: absolute
+  right: 0
+  bottom: var(--mobile-offset)
+  content: ''
+  width: 30px
+  height: 30px
+  background: #EDEDED
+  border-radius: 6px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.ad__type
+  display: flex
+  align-items: center
+.ad__type-img
+  margin-right: var(--mobile-offset)
+.ad__type-title
+  font-weight: 500
+  font-size: 18px
+  line-height: 90%
+  color: var(--title-black-color)
+
+.ad__tags
+  display: flex
+  gap: var(--mobile-offset)
+
+.ad__tag
+  padding: 5px var(--small-offset)
+  background: #CCF4DE
+  border-radius: 40px
+  color: #01A856
+
+.ad__load
+  display: flex
+  flex-direction: column
+  width: 100%
+
+.ad__load-files
+  display: flex
+  flex-direction: column
+  gap: var(--mobile-offset)
+
+.ad__load-file
+  width: 100%
+  border-radius: 20px
+  background-color: inherit
+  border: 1px solid var(--blue-color)
+  color: var(--blue-color)
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  &::before
+    content: ''
+    width: 19px
+    height: 21px
+    margin-right: 10px
+    background-image: url('./../img/doc.svg')
+
+.ad__load-title
+  font-size: 16px
+  line-height: 140%
+  color: #474747
+  margin-bottom: var(--mobile-offset)
+
+.ad__photo
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: var(--mobile-offset)
+  img
+    width: 100%
+    max-width: 500px
+
+#ad
+  .ad__imgs
+    margin-bottom: 0

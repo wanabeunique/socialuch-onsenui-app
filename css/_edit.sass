@@ -1,0 +1,54 @@
+.edit-wrapper
+  display: flex
+  flex-direction: column
+  gap: 10px
+  margin-bottom: var(--small-offset)
+
+.edit__item
+  display: flex
+  flex-direction: column
+
+.edit__title
+  font-weight: 400
+  font-size: 12px
+  line-height: 140%
+  color: black
+
+.edit__input
+  margin-top: 5px
+  width: 100%
+  border: 1px solid #EDEDED
+  border-radius: 40px
+  padding: 12px var(--mobile-offset)
+  font-weight: 300
+  font-size: 16px
+  line-height: 140%
+  color: var(--title-black-color)
+
+// пароль
+.edit-password
+  position: relative
+  margin-bottom: var(--tiny-offset)
+
+#password-input
+  width: 100%
+  height: 50px
+  font-weight: 300
+  font-size: 14px
+  line-height: 140%
+  color: var(--title-black-color)
+
+.password-control
+  position: absolute
+  top: 15px
+  right: 25px
+  width: 30px
+  height: 30px
+  background-image: url('./../img/noView.svg')
+  background-size: 100%
+  background-position: center
+  z-index: 1000
+  &.view
+    background-image: url('./../img/view.svg')
+    z-index: 1000
+

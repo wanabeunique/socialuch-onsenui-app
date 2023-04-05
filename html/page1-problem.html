@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsen-css-components.min.css">
+  <script src="./../node_modules/onsenui/js/onsenui.min.js"></script>
+  <script src="./../js/page.js"></script>
+
+  <script>
+    ons.disableAutoStyling()
+  </script>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="toolbar__container">
+      <div class="left">
+        <ons-back-button></ons-back-button>
+      </div>
+      <div class="center">
+        <img src="./../img/logo.jpg" alt="">
+      </div>
+      <div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+
+    <div id="problem">
+      
+        <div id="problem">
+          <div class="ad__wrapper">
+            <div class="ad__type">
+              <img class="ad__type-img" src="./../img/problem.svg" alt="">
+              <p class="ad__type-title">Проблема</p>
+            </div>
+            <div class="ad__info">
+              <div class="ad__place">
+                <img class="ad__place-img" src="./../img/place.svg" alt="">
+                <div class="ad__place-text">
+                  <strong class="ad__place-title">По&nbsp;адресу:</strong>
+                  <p class="ad__place-subtitle">Ул. Космонавта Комарова, 86</p>
+                </div>
+              </div>
+              <div class="ad__tags">
+                <div class="ad__tag"><span>#ЖКХ</span></div>
+                <div class="ad__tag"><span>#УК</span></div>
+              </div>
+            </div>
+            <div class="ad__text">
+              <strong class="ad__text-title ad__title">
+                Центр Нижнего Новгорода и Канавинский
+                мост перекрыли для движения
+              </strong>
+              <div class="ad__text-content">
+                <ons-button class="ad__text-open blur-reset" onclick="openText(this)"><img src="./../img/arrowBottom.svg" alt=""></ons-button>
+                <p class="ad__content blur-container">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quaerat! Quos totam aliquam laboriosam enim sit ab veniam accusamus magni, magnam error dicta qui, molestiae aliquid necessitatibus quis amet mollitia quidem eos. Sapiente non, sequi ex cumque explicabo quia accusantium commodi recusandae quis eveniet numquam aut laborum libero sint dignissimos in culpa, quam quo ratione accusamus? Reprehenderit in sunt aliquid excepturi a doloribus sed, nesciunt minima, maiores qui itaque voluptate necessitatibus consequuntur libero numquam labore. Fugit adipisci saepe quidem dignissimos voluptatibus tenetur numquam aspernatur, repellendus veritatis culpa, nulla eum nam nihil veniam esse assumenda officia laboriosam sed. Officia, sint doloremque!
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, nulla iste fuga dolore eligendi blanditiis quo vel harum recusandae facilis minima, nam impedit asperiores necessitatibus facere excepturi ab accusantium doloremque officia voluptatem esse omnis dolorum vitae repudiandae? Qui quis aperiam, reprehenderit nisi porro eos nihil quaerat sed earum autem itaque eveniet labore voluptate laborum quas culpa ad tenetur ullam aliquid enim voluptas est voluptatum! Cupiditate numquam ab dolores? Cupiditate accusamus ducimus odit exercitationem dolorum, enim sed sint ad? Veniam possimus cumque distinctio, voluptatem ut corporis aperiam veritatis amet suscipit dignissimos quae eveniet sed alias eum esse officia iure! Sit, illo.
+                </p>
+              </div>
+            </div>
+            <div class="ad__imgs">
+              <img src="./../img/ad1.jpg" alt="">
+              <img src="./../img/ad2.jpg" alt="">
+              <img src="./../img/ad1.jpg" alt="">
+            </div>
+            <div class="ad__load">
+              <p class="ad__load-title">Документы для скачивания</p>
+              <div class="ad__load-files">
+                <ons-button class="ad__load-file">Отчет социального участкового.doc</ons-button>
+                <ons-button class="ad__load-file">Отчет социального участкового.doc</ons-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ons-bottom-toolbar>
+        <ons-tabbar swipeable position="auto">
+          <ons-tab label="Мой район" icon="ion-ios-home, my" active>
+          </ons-tab>
+          <ons-tab label="Соц участковый" icon="md-settings" active-icon="md-face">
+          </ons-tab>
+          <ons-tab label="Уведомления" icon="md-settings" active-icon="md-face"  badge="">
+          </ons-tab>
+          <ons-tab label="Аккаунт" icon="md-settings" active-icon="md-face">
+          </ons-tab>
+        </ons-tabbar>
+      </ons-bottom-toolbar>
+
+    </ons-page>
+  </body>
+</html>

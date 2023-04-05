@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsen-css-components.min.css">
+  <script src="./../node_modules/onsenui/js/onsenui.min.js"></script>
+  <script src="./../js/page.js"></script>
+
+
+  <script>
+    ons.disableAutoStyling()
+  </script>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="toolbar__container">
+      <div class="left">
+        <ons-back-button></ons-back-button>
+      </div>
+      <div class="center">
+        <img src="./../img/logo.jpg" alt="">
+      </div>
+      <div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+    
+
+    <div id="page4">
+      <div class="page-title container-wrap">
+        <h1>Мой профиль</h1>
+      </div>
+      <div class="profile container-wrap">
+        <div class="profile__item profile__item--profile">
+          <div class="profile__title-wrapper">
+            <img src="./../img/profileBlue.svg" alt="">
+            <h3>Сергей Александрович</h3>
+          </div>
+          <div class="profile__info">
+            <div class="profile__text"><strong>ФИО</strong><p>Алексеев Сергей Александрович</p></div>
+            <div class="profile__text"><strong>Дата рождения</strong><p>12.04.90</p></div>
+            <div class="profile__text"><strong>Адрес проживания</strong><p>Ул. Заречный бульвар, 212, кв 90</p></div>
+            <div class="profile__text"><strong>Телефон</strong><p>8 (910) 465-32-11</p></div>
+            <div class="profile__text"><strong>Электронная почта</strong><p>nmo77@mail.ru</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="profile__btns container-wrap">
+        <ons-button class="profile__btn profile__btn--blue" onclick="pushEdit()">
+          <p class="profile__btn--title">Редактировать</p>
+        </ons-button>
+        <ons-button class="profile__btn profile__btn--white">
+          <img class="profile__btn--img" src="./../img/lock.svg" alt="">
+          <p class="profile__btn--title">Изменить пароль</p>
+        </ons-button>
+      </div>
+    </div>
+    
+    <ons-bottom-toolbar>
+      <ons-tabbar swipeable position="auto">
+        <ons-tab label="Мой район" icon="ion-ios-home, my" active>
+        </ons-tab>
+        <ons-tab label="Соц участковый" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+        <ons-tab label="Уведомления" icon="md-settings" active-icon="md-face"  badge="">
+        </ons-tab>
+        <ons-tab label="Аккаунт" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+      </ons-tabbar>
+    </ons-bottom-toolbar>
+
+    </ons-page>
+  </body>
+</html>

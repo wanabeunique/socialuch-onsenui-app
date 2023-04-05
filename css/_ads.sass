@@ -1,0 +1,92 @@
+@import _cfg.sass
+.board__title
+  font-weight: 600
+  font-size: 40px
+  line-height: 58px
+  color: var(--title-black-color)
+  margin-bottom: var(--mobile-offset)
+
+.board__items
+  display: grid
+  grid-template-columns: 1fr
+  padding: 0 var(--mobile-offset)
+  gap: var(--mobile-offset)
+  border-radius: 20px
+
+.board__item
+  display: flex
+  flex-direction: column
+  max-height: 100%
+  background: white
+  padding: 20px
+  border-radius: 20px
+  box-shadow: 0 4px 20px rgba(0.02, 0.02, 0.02, 0.02)
+  margin: 5px 0
+
+.board__item--date
+  display: flex
+  align-items: center
+  span
+    margin-left: 10px
+    color: var(--blue-color)
+
+.board__item--text
+  margin-top: 10px
+  font-weight: 300
+  color: var(--text-black-color)
+
+.board__btn
+  width: 150px
+  height: 30px
+  border-radius: 20px
+  border: 1px solid var(--blue-color)
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: var(--tiny-offset)
+  background: inherit
+  span
+    color: var(--blue-color)
+    font-weight: 500
+    font-size: 12px
+
+.board__item--link
+  background: #F1FAFF
+  display: flex
+  justify-content: center
+
+.board__btn--blue
+  display: flex
+  align-items: center
+  justify-content: center
+  background: var(--blue-color)
+  border-radius: 40px
+  height: 50px
+  span
+    color: var(--turquoise-color)
+    font-weight: 500
+    line-height: 23px
+    margin-left: 8px
+
+.boards__wrapper
+  display: flex
+  justify-content: space-between
+
+.carousel-wrapper
+  position: relative
+.board__next
+  position: absolute
+  top: calc(50% - 45px/2)
+  right: 10px
+  z-index: 1
+  height: 45px
+  width: 75px
+  background: #FFFFFF
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07)
+  border-radius: 8px
+  color: #8A8A8A
+  // &:hover
+  //   background: #FFFFFF
+  //   color: #8A8A8A
+  //   opacity: 1
+

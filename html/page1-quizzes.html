@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Onsen Ui -->
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="./../node_modules/onsenui/css/onsen-css-components.min.css">
+  <script src="./../node_modules/onsenui/js/onsenui.min.js"></script>
+  <script src="./../js/page.js"></script>
+
+  <script>
+    ons.disableAutoStyling()
+  </script>
+  <link rel="stylesheet" href="./../css/style.css">
+</head>
+<body>
+  <ons-page>
+    <ons-toolbar class="toolbar__container">
+      <div class="left">
+        <ons-back-button></ons-back-button>
+      </div>
+      <div class="center">
+        <img src="./../img/logo.jpg" alt="">
+      </div>
+      <div class="right">
+        <ons-toolbar-button>
+          <ons-icon icon="ion-ios-menu, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+    
+    <div id="quizzes">
+      <div class="page-title container-wrap">
+        <h1>Опросы и голосования</h1>
+      </div>
+      <div class="quizzes__list container-wrap">
+          <div class="main__item-quiz quiz">
+            <div class="quiz__secondary--item">
+              <div class="quiz__info quiz__info--secondary">
+                <div class="quiz__type">
+                  <h4 class="quiz__name">ОПРОС</h4>
+                  <div class="quiz__hashtag"><span>#Дороги</span></div>
+                </div>
+              </div>
+              <div class="quiz__text--secondary">
+                <div class="quiz__data--date">
+                  <img src="./../img/calendarGreen.svg" alt="">
+                  <p>Дата создания: 23.01.2022</p>
+                </div>
+                <p class="quiz__question--second">
+                  Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+                </p>
+                <ons-button onclick="pushQuiz()" class="quiz__secondary--btn">
+                  <p>Пройти &gt;</p>
+                </ons-button>
+              </div>
+            </div>
+          </div>
+          <div class="main__item-quiz quiz">
+            <div class="quiz__secondary--item">
+              <div class="quiz__info quiz__info--secondary">
+                <div class="quiz__type">
+                  <h4 class="quiz__name">ОПРОС</h4>
+                  <div class="quiz__hashtag"><span>#Дороги</span></div>
+                </div>
+              </div>
+              <div class="quiz__text--secondary">
+                <div class="quiz__data--date">
+                  <img src="./../img/calendarGreen.svg" alt="">
+                  <p>Дата создания: 23.01.2022</p>
+                </div>
+                <p class="quiz__question--second">
+                  Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+                </p>
+                <ons-button onclick="pushQuiz()" class="quiz__secondary--btn">
+                  <p>Пройти &gt;</p>
+                </ons-button>
+              </div>
+            </div>
+          </div>
+          <div class="main__item-quiz quiz">
+            <div class="quiz__secondary--item">
+              <div class="quiz__info quiz__info--secondary">
+                <div class="quiz__type">
+                  <h4 class="quiz__name">ОПРОС</h4>
+                  <div class="quiz__hashtag"><span>#Дороги</span></div>
+                </div>
+              </div>
+              <div class="quiz__text--secondary">
+                <div class="quiz__data--date">
+                  <img src="./../img/calendarGreen.svg" alt="">
+                  <p>Дата создания: 23.01.2022</p>
+                </div>
+                <p class="quiz__question--second">
+                  Установка памятников, оград, фонтанов, остановочных павильонов, киосков, рекламных щитов и т.п.
+                </p>
+                <ons-button onclick="pushQuiz()" class="quiz__secondary--btn">
+                  <p>Пройти &gt;</p>
+                </ons-button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ons-bottom-toolbar>
+      <ons-tabbar swipeable position="auto">
+        <ons-tab label="Мой район" icon="ion-ios-home, my" active>
+        </ons-tab>
+        <ons-tab label="Соц участковый" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+        <ons-tab label="Уведомления" icon="md-settings" active-icon="md-face"  badge="">
+        </ons-tab>
+        <ons-tab label="Аккаунт" icon="md-settings" active-icon="md-face">
+        </ons-tab>
+      </ons-tabbar>
+    </ons-bottom-toolbar>
+
+    </ons-page>
+  </body>
+</html>
